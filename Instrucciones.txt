@@ -1,0 +1,43 @@
+Funcionamiento de la web 
+
+- Titulo: se ha generado con la opcion de que al hacer click, 
+se reinicie la ventana de las tarjetas mostrando todos los elementos 
+disponibles en todos los tipos, incluso los añadidos a posteriori.
+
+
+- Buscar: se puede filtrar por 3 opciones:
+    - Tipo: se puede seleccionar entre 3: pelicula, videojuego o ebook
+    - Nombre
+    - Fecha: debe estar en el formato DD/MM/YYYY Ej: 02/02/2018 o 30/12/
+    
+No es obligatorio introducir nombre y/o fecha, si no se hace, se buscara 
+automaticamente por el tipo especificado. 
+
+En este apartado y para comodidad del usuario, se ha procedido a limpiar los campos 
+una vez realizada la busqueda, para facilitar una nueva.
+En caso de que no se haya encontrado ningun archivo, se procedera a informar al 
+usuario mediante una ventana emergente. 
+
+
+- Añadir: se pide rellenar 4 campos
+    - Titulo: sera obligatorio introducir un titulo, en caso de no hacerlo, no se
+        podra generar el elemento
+    - Imagen: sera obligatorio introducir una imagen, en caso de no hacerlo, no se
+        podra generar el elemento
+    - Autor: no sera necesario especificarlo
+    - Tipo: se dara la opcion entre 3 valores que son: pelicula, videojuego, ebook.
+
+En este apartado y para comodidad del usuario, se ha procedido a limpiar los campos 
+una vez introducido el nuevo elemento, por si desea añadir varios de seguido. 
+
+
+- Modificar: en este apartado se ha optado por la opcion de pedir los datos 
+sin generar una ventana nueva. 
+Primero se informa al usuario de que si deja algun dato vacio, este no se modificara
+en la tarjeta correspondiente. 
+Tras ello se piden los siguientes datos en orden: titulo, imagen, tipo. 
+IMPORTANTE: se ha realizado la comprobacion de que si mete el tipo bien pero con mayusculas
+por ejemplo "Pelicula" este se pase todo a minusculas para facilitar la creacion del elemento
+
+- Borrar: antes de proceder al borrado se pide la confirmacion del usuario de que este 
+seguro que desea eliminar dicho elemento

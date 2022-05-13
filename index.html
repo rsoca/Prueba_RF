@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>B. Multimedia</title>
+  <link rel="shortcut icon" href="https://flyclipart.com/thumbs/biblioteca-icon-apple-music-library-icon-944657.png">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./src/styles.css" />
+
+  <!-- Letra titulo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+
+
+  <!-- Letra tarjetas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="containerTitulo">
+      <a href="#" class="logoTitulo" onclick="volverAInicio()"> BIBLIOTECA MULTIMEDIA </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="sectionBuscadorElemento">
+
+      <p id="tituloBuscarElemento"> ¿Deseas buscar un archivo? </p>
+
+      <div class="contenedorElementosBusqueda">
+        <SELECT id="cajaOpciones">
+          <OPTION value="pelicula">Pelicula</OPTION>
+          <OPTION value="videojuego">Videojuego</OPTION>
+          <OPTION value="ebook">E-Book</OPTION>
+        </SELECT>
+
+        <input type="search" id="inputBuscarPorNombre" placeholder="Nombre archivo..." />
+        <input type="search" id="inputBuscarPorFecha" placeholder="Fecha creacion (DD/MM/AAAA)" />
+        <button id="botonBuscador" onclick="buscarElemento()"> Buscar </button>
+      </div>
+
+    </section>
+
+    <section id="sectionAnadirElemento">
+
+      <p id="tituloAnadirElemento"> ¿Quieres aportar tu propio contenido? </p>
+
+      <input type="text" id="tituloElemento" placeholder="Introducir titulo...">
+
+      <input type="text" id="imagenElemento" placeholder="Introducir enlace imagen...">
+
+      <input type="text" id="autorElemento" placeholder="Introducir autor...">
+
+      <SELECT id="cajaOpcionesAnadir">
+        <OPTION value="pelicula">Pelicula</OPTION>
+        <OPTION value="videojuego">Videojuego</OPTION>
+        <OPTION value="ebook">E-Book</OPTION>
+      </SELECT>
+
+      <button id="botonAnadir" onclick="anadirElemento()"> Añadir </button>
+
+    </section>
+
+    <section id="ventanaTarjetas">
+      <div class="inventarioCompleto"></div>
+    </section>
+
+  </main>
+
+  <script src="src/index.js"></script>
+</body>
+
+</html>
